@@ -60,7 +60,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
     <meta name="keywords" content="">
-    <meta name="theme-color" content="#0097A7">
+    <meta name="theme-color" content="#FFB6C1">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
     <meta http-equiv="Cache-Control" content="no-transform" />
@@ -115,13 +115,13 @@
   #scheme-Paradox .sidebar_archives-count,
   #scheme-Paradox .sidebar-colored .sidebar-header,
   #scheme-Paradox .sidebar-colored .sidebar-badge{
-    background-color: #0097A7 !important;
+    background-color: #FFB6C1 !important;
   }
 
   /* Sidebar User Drop Down Menu Text Color */
   #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
   #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
-    color: #0097A7 !important;
+    color: #FFB6C1 !important;
   }
 
   #post_entry-right-info,
@@ -134,7 +134,7 @@
   .sidebar-colored .sidebar-nav > .open > a:hover,
   .sidebar-colored .sidebar-nav > .open > a:focus,
   #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
-    color: #0097A7 !important;
+    color: #FFB6C1 !important;
   }
 
   .toTop {
@@ -245,7 +245,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Hexo">
     <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/16/hello-world/">
-    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="msapplication-navbutton-color" content="#FFB6C1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Hexo">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -299,7 +299,7 @@
             "@type": "ImageObject",
             "url": "/img/avatar.png"
         },
-        "description": "Hi, nice to meet you"
+        "description": "Hi, nice to meet you,excellent"
     },
     "publisher": {
         "@type": "Organization",
@@ -395,15 +395,8 @@
     <!-- Paradox Post Header -->
     
         
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
+            <!-- Pure Thumbnail -->
+            <div class="post_thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:#FFB6C1 !important">
         
     
             <p class="article-headline-p">
@@ -440,6 +433,18 @@
     -->
 
     <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">اقرأ هذا المقال على جهاز آخر</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACbElEQVR42u3aQW7DMAwEQP//0+21QBB7SUayG4xPRZJaGh8sYsnj56uvAw8PDw8PDw8P72G8I77+/v71Dvkn7749/zzZGx4eHt5O3sWr9mVzOfj8MVUf5fne8PDw8Pbzqsucb3qyxcne8PDw8J7Gq+JzRr4uHh4e3v/inRfE+eGRl+94eHh4T+ZVS96ksM5D2yTwXZ614OHh4cW8XgNsz9+39ffw8PDw3vDKI03xoEBScFePqGiHeHh4eIt5SUQ7H71KCuvePZtZCx4eHt4C3nwYKw9nC1tfkVLj4eHhFXlJEdxr6uexbL56+WDAw8PDW8DLg9pkW9WSen4MRGEEHh4e3kd51Uhi3v6vUvNABA8PD28/b77pSWFdjXfx8PDwnsDLS+fqy3q+1mgyAg8PD28xrxrmJgdJL7pNjg08PDy8u3jJTauRa3I85KV5flTg4eHh7eH1SuTJwEFeslePJTw8PLydvEkzLH/pN9taeSmPh4eHt4WXh7DNgOBDsUXyv3h4eHiredWXeK847j2U5DjBw8PDu4sXvXCLAWsvVpiMuuLh4eHt4c0BeajRGx3IgxI8PDy8nbz5QFUvkO2FyBclOB4eHt5iXh4rVEvbQnwQxA2FFfHw8PAW8ybtrmpwkJfao9gXDw8PbzHviK9kc70X/WQtPDw8vLt41eb9ZPggb4zld8PDw8O7i5eXy9WgoXc8NB8EHh4e3sN41QZV9djIo5C3K+Lh4eE9ktcroKsB8YdHB/Dw8PAW8JIwovptPoiQ/+ZiiAEPDw9vC2/SABsNSLXaXRff4uHh4S3mfd+Fh4eHh4eHh4f3gOsX8ai6loyHwvUAAAAASUVORK5CYII=">
+    
+</ul>
+
     
 
     <!-- Tags (bookmark) -->
@@ -666,11 +671,44 @@
 
     <!-- Categories  -->
     
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                فئة
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
+    
 
     <!-- Pages  -->
     
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
 
     <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                رقم المقالة
+                <span class="sidebar-badge">1</span>
+            </a>
+        </li>
+        
     
 </ul>
 
@@ -742,7 +780,7 @@ It will not impact the appearance and can give developers a lot of support :)
         <div class="mdl-mini-footer--left-section sns-list">
     <!-- Twitter -->
     
-        <a href="https://twitter.com/twitter" target="_blank">
+        <a href="https://twitter.com/umi_789456" target="_blank">
             <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
                 <span class="visuallyhidden">Twitter</span>
             </button><!--
@@ -865,6 +903,10 @@ It will not impact the appearance and can give developers a lot of support :)
 </script>
 
 
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?lOy/ACj5suSNi7ZVFVbpFQ==", true)</script>
+    
 
 
 
