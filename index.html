@@ -27,11 +27,13 @@
 
 
 
+    <link rel="dns-prefetch" href="https://umi678.disqus.com"/>
 
 
 
 
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+    <link rel="dns-prefetch" href="https://lib.baomitu.com"/>
 
 
 
@@ -197,7 +199,31 @@
 <!-- Import Font -->
 <!-- Import Roboto -->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.svg#Roboto) format('svg')
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: regular;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.svg#Roboto) format('svg')
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.svg#Roboto) format('svg')
+        }
+    </style>
 
 
 <!-- Import Material Icons -->
@@ -552,7 +578,7 @@
 
     <!-- Sidebar Email -->
     <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        youremail@email.com
+        iyanagihiro@gmail.com
         <b class="caret"></b>
     </a>
 </div>
@@ -565,7 +591,7 @@
         <ul id="settings-dropdown" class="dropdown-menu">
             
                 <li>
-                    <a href="#" target="_blank" title="Email Me">
+                    <a href="mailto:iyanagihiro@gmail.com" target="_blank" title="Email Me">
                         
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         
@@ -746,6 +772,11 @@ It will not impact the appearance and can give developers a lot of support :)
         <div id="copyright">
             Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Hexo
             
+                <br>
+                
+                    <p>我就是不备案，你顺着网线过来打我啊！</p>
+                
+            
         </div>
 
         <!-- Paradox Footer Right Section -->
@@ -809,6 +840,9 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//umi678.disqus.com/count.js" async></script>
 
 
 
@@ -875,7 +909,7 @@ It will not impact the appearance and can give developers a lot of support :)
     var copyrightNow = new Date().getFullYear();
     var textContent = document.querySelector('span[year]')
 
-    copyrightSince = 0000;
+    copyrightSince = 2018;
     if (copyrightSince === copyrightNow||copyrightSince === 0000) {
         textContent.textContent = copyrightNow
     } else {
